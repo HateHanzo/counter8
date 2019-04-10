@@ -27,9 +27,12 @@ csrc/
 simv.vdb/
 urgReport/
 
-# DVE and UCLI related files.
+# DVE Verdi and UCLI related files.
 DVEfiles/
 ucli.key
+novas.conf
+novas.rc
+verdiLog/
 
 # When the design is elaborated for DirectC, the following file is created
 # with declarations for C/C++ functions.

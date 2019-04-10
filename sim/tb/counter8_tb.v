@@ -109,6 +109,11 @@ always  @(DOUT_reg)
 always  @(HOLD_reg)
         $display($stime,,"When input is %h(%0d),output is %h(%0d)",DIN_reg,DIN_reg,DOUT_reg,DOUT_reg);
 
+initial begin
+  $fsdbDumpfile("wave.fsdb");
+  $fsdbDumpvars;
+end
+
 endmodule
 
 
