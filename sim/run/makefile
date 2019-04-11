@@ -8,7 +8,7 @@ sim:
 	./simv -l sim.log
 
 wave:
-	verdi -v -f ../../rtl/counter8.v ../tb/counter8_tb.v -ssf wave.fsdb
+	verdi -f filelist.f -ssf wave.fsdb -sswr signal.rc&
 
 clr:
 	rm -rf csrc simv* ucli.key *.log *.dump 
